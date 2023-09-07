@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/medica.sol": "Medical"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/medica.sol": {
+			"keccak256": "0xd4952d1ad24493d1b09e00f68308f40399f25bd93de9203f1cf7e2c3f4f89782",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://84ea68a22caa8f898aeeb4743d7b626747612488327f9784f5707125fbeac3ef",
+				"dweb:/ipfs/Qmeur4wBE5PNetgimyPA7o1Jx7toRVwbvXn3h5vksWdkSj"
+			]
+		}
+	},
+	"version": 1
+}

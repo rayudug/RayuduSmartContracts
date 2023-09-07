@@ -38,7 +38,7 @@ contract Property{
        // property[_add].annualIncome += _annualIncome;
     }
     function transfer(address _add,address _to,uint _land,uint _income,string memory _newname) public{
-        require(property[_add].totalLand >= _land, "You have no sufficient land to transfer");
+        require(property[_add].totalLand > _land, "You have no sufficient land to transfer");
         property[_add].totalLand -= _land;
         property[_to].totalLand += _land;
          property[_add].owner = _newname;

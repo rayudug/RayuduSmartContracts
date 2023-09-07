@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getResult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/statevariables.sol": "statevariables"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/statevariables.sol": {
+			"keccak256": "0xd08e1c4f19675b300d1617692a64059ad2a6e38ba9cc215b324424bed9563372",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cb2a72fe467731a805b0083c09b5705aa4d5d689ea398137a4af7cec8b37a561",
+				"dweb:/ipfs/QmNuJRd6F1pQHqgMdP8ve8Beme6bsooSMhAyfDwXmu5cad"
+			]
+		}
+	},
+	"version": 1
+}

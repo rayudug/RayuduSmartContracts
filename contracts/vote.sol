@@ -6,20 +6,20 @@ contract Voting{
         string name;  //party name
         uint voteCount;  //party vote count
     }
-    Proposals[] public proposal;
+    Proposals[] public proposal;  //stores party name and its count
     modifier onlyAdmin(){
         require(admin == msg.sender, "Not the admin");
         _;
     }
     mapping(address => bool) public voted;
-    constructor(string[] memory proposalsNames){
+    constructor(string[] memory proposalsNames){   //string array called proposalNames
         admin = msg.sender;
         for(uint i=0;i<proposalsNames.length;i++){
          proposal.push(Proposals({name : proposalsNames[i], voteCount : 0}));
         }
     }
     function voteProposal(address _add,uint proposalIndex) public{
-        require(proposalIndex < proposal.length ,"Voting to Invalid proposal"); 
+        require(proposalIndex <= proposal.length ,"Voting to Invalid proposal"); 
         require(!voted[_add],"You already voted");
         voted[_add] = true;
         proposal[proposalIndex].voteCount++;

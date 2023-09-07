@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "str",
+						"type": "string"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/bytess.sol": "Bytes"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/bytess.sol": {
+			"keccak256": "0x573e0591e36fff3bc03fa2c5a2d5de99a79f66c1d8a58fdf2a2d891cc5381694",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://09ffb4a878ac6ebb3889b95c9773ab0add48a643adc12b73e5df96367eaccbab",
+				"dweb:/ipfs/QmeRe4VTsft8iPt44uxhHnFJj1Dmb8iXN8Qvs8bpPFW1vs"
+			]
+		}
+	},
+	"version": 1
+}

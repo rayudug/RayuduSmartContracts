@@ -1,0 +1,285 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_ownerName",
+						"type": "string"
+					}
+				],
+				"name": "INSURANCE",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_add",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "Amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nowDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expiryDate",
+						"type": "uint256"
+					}
+				],
+				"name": "InsuranceCheck",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_policeName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_policeBranch",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_driverAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_driverName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_witnessName",
+						"type": "string"
+					}
+				],
+				"name": "Police",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "vehicleStatus",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_driverName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_driverAddres",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_insurerCompany",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_insurerBranch",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_insuranceId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_validity",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_owner",
+						"type": "string"
+					}
+				],
+				"name": "accidentVehicle",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_add",
+						"type": "address"
+					}
+				],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getTotalCases",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "insurance",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "check",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_ownerName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_aadhar",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_ownerLocation",
+						"type": "string"
+					}
+				],
+				"name": "newVehicleRegister",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/vehicle.sol": "Vehicle"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/vehicle.sol": {
+			"keccak256": "0x21b3c236f362bda52c7ed149a6f9bc38385e50f2e3fc062dac1a60eb71affb94",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5356ae47473049e07b4e4798da5a53d7de8afa0d7cdd4cad94ed78a15c649215",
+				"dweb:/ipfs/QmR1GRTKhdpx2Wz2pRRcKjNrucY8hgCRYMHuVa5Kw8E2rp"
+			]
+		}
+	},
+	"version": 1
+}

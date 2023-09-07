@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "retrieveEncryptedData",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_encryptedData",
+						"type": "bytes32"
+					}
+				],
+				"name": "storeEncryptedData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/vehicle.sol": "SecureDataStorage"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/vehicle.sol": {
+			"keccak256": "0xbff8ae67bc39eacdf1aab1ee2bbb332aff5f3ab5a82ca44ff3451e8a332cde41",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://53649a52f3ea10578a6add164d88683895e3f3d5f47734608a8321457efbcc4e",
+				"dweb:/ipfs/Qmb9L9HHrnvsgGaR5uKUuSe4TgxqFp6r8EmhWckBySNyAN"
+			]
+		}
+	},
+	"version": 1
+}

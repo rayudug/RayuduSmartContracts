@@ -13,10 +13,11 @@ contract Crops{
         string farmlocation;
         string cropname;
         uint area;
+        uint time;
     }
     mapping(address =>mapping(uint => Farmer)) public crops;  
     event FarmRegistering(address owner, string _cropname,string farmlocation,uint area);
-    function register(address _add,uint _id,string memory _farmlocation,string memory _cropname,uint _area) external OnlyFarmer {
+    function register(address _add,uint _id,string memory _farmlocation,string memory _cropname,uint _area) external {
         require(bytes(_cropname).length > 0, "Crop name should not be empty");
         require(bytes(_farmlocation).length > 0, "Location should be specified");
         require(_area > 0, "Area should be greater than zero");
@@ -24,6 +25,7 @@ contract Crops{
         crops[_add][_id].farmlocation = _farmlocation;
         crops[_add][_id].cropname = _cropname;
         crops[_add][_id].area = _area;
+        crops[_add][_id].time = block.timestamp;
         emit FarmRegistering(_add,_cropname,_farmlocation,_area);
     }
     function updateCrops(address _add,uint _id,string memory _cropname, string memory _farmlocation,uint _area) public {

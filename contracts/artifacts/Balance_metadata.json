@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Balancecheck.sol": "Balance"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Balancecheck.sol": {
+			"keccak256": "0xd71a5601ef8f563c0fb96a4922a7eab08ea2771327bf39850c11188c9c8107ba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ef9310ee5cbd3a942521be8d0113b396ab1b3fd1a229cf549858e72f5686835b",
+				"dweb:/ipfs/QmR28RZ5jUj3snzFMuQHSvvM31WFQbSESZ4wEPJvorz2ZE"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "key",
+						"type": "uint256"
+					}
+				],
+				"name": "binary",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Binarysearch.sol": "BinarySearch"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Binarysearch.sol": {
+			"keccak256": "0x2682e795972dda05fbc1603a2cfe644d38c28e45b4bb269dc52c70a7a9e7285e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f7dedffc213f1c9d6b8131f5f1309504345595fc83e8e3f551513bd049dfef55",
+				"dweb:/ipfs/QmTcYEiipqaU8bkD7mpnVQEzxZeesVwTNf4Evq82tvmVgp"
+			]
+		}
+	},
+	"version": 1
+}

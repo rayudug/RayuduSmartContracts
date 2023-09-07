@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.21+commit.d9974bed"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "boo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "info",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/multipleinheritance.sol": "A"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/multipleinheritance.sol": {
+			"keccak256": "0xc987c4c5761a264965b342e1188b4d07cf6f4e49eb6cdae25820b15827a8ae0e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://43fa583d6157d0ec0d7ee1dfa3417d8523f323a1b80945b85472d46c02c6f2de",
+				"dweb:/ipfs/QmdQ7BL5FjUjXnc3MUW9uWA1fBbECXiPodapkc1HHFDW9E"
+			]
+		}
+	},
+	"version": 1
+}

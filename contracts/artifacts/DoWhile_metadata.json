@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "doWhile",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "j",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/doWhile.sol": "DoWhile"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/doWhile.sol": {
+			"keccak256": "0x550bb47ab6b15306a2d26ccb8e61c29b9044a4cf7c09b311c1787a3e196c7311",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8e5d7a13a86d65119c3bc94afc903a178d9fe451ef08793afe53a713ac9266c5",
+				"dweb:/ipfs/QmYKrkR2exaQzsYjUjPoDESqbxWd5e2ebGzUyX4GUYzR1z"
+			]
+		}
+	},
+	"version": 1
+}
