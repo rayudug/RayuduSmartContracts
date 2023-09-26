@@ -1,30 +1,29 @@
 {
 	"compiler": {
-		"version": "0.8.21+commit.d9974bed"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "buttonOff",
+				"inputs": [
+					{
+						"internalType": "enum Enums.Status",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "setStatus",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "buttonOn",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getbuttonstate",
+				"name": "status",
 				"outputs": [
 					{
-						"internalType": "enum Enums.Button",
+						"internalType": "enum Enums.Status",
 						"name": "",
 						"type": "uint8"
 					}
@@ -46,9 +45,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/enums.sol": "Enums"
+			"contracts/enums1.sol": "Enums"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -60,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/enums.sol": {
-			"keccak256": "0xa83662f1495dd0280d4bb475f9bda68435f8883f7b59f9cf5ca00d26da4c2eb7",
+		"contracts/enums1.sol": {
+			"keccak256": "0xb66d551f59f4e960e4b7f8dea7bd32ec8b4cd4bfba1ece338e482e1f4808d497",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9eddb345965bfb404c8081a7ac3905c7262b4db801b8ac09f97699905d46dc79",
-				"dweb:/ipfs/QmcthpBqL5fZLfJQAUWQuu4yggqViSubcbu9CiRdvWq3Ky"
+				"bzz-raw://743b9557dd570d9a14efbd0afa169b64ca53f8ff4f518b3d60b113fc3e62fd04",
+				"dweb:/ipfs/QmfUpt7NTqAYBuv85cdi8Dbvs7BPQfMS6rpSjzihSBpqfH"
 			]
 		}
 	},

@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.21+commit.d9974bed"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -14,18 +14,12 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
 				"name": "addBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -37,7 +31,7 @@
 						"type": "address"
 					}
 				],
-				"name": "balance",
+				"name": "balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -49,8 +43,14 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "checkBalance",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_add",
+						"type": "address"
+					}
+				],
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -78,16 +78,39 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_receipent",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_amount",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"name": "transferAmount",
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferCheck",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -106,9 +129,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/transfer error handling.sol": "Bank"
+			"contracts/Bank.sol": "Bank"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -120,12 +143,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/transfer error handling.sol": {
-			"keccak256": "0x2865fb9424a2792da92049d9d5571ffaf4439046625b92f886fe117ca0af5047",
+		"contracts/Bank.sol": {
+			"keccak256": "0x5d93938e8eafc84f3c5bf14ee57ead3a51f79ead4f635dc3d01be522bfd969ca",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c9b98b699b10da4221b831e40407da2e58f33a0d81f8138bf801d577a9788a99",
-				"dweb:/ipfs/QmRVySGLaaDjkybyfEjVWucu4yz2Su55ZqtAkS4GFGpy9L"
+				"bzz-raw://089d1df0873ce439dcf7740fcab527bbacfa4c0682df7764c7e4a4c75c21c9b1",
+				"dweb:/ipfs/QmXiEYGdrZsYFFaaXrvkc18pM4VByHCvq2CchqMgDvmABA"
 			]
 		}
 	},

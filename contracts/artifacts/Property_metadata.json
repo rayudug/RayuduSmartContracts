@@ -32,6 +32,11 @@
 						"internalType": "uint256",
 						"name": "_land",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_annualIncome",
+						"type": "uint256"
 					}
 				],
 				"name": "buyLand",
@@ -234,11 +239,11 @@
 	},
 	"sources": {
 		"contracts/propexchange.sol": {
-			"keccak256": "0x7985922698be45bbc58e7d9cb8ec09aead563b901a5be075a4bd54c5e61aad26",
+			"keccak256": "0x9636559f82a362385130867a95b15965d51e00d5d0f976fbea934ea86a24cca9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://81609235d89cc4cdc0cf0894f5da0615e19d95a86a282fd9c7bd62cb052e65d7",
-				"dweb:/ipfs/Qmeo5bqmvrUVfgrgqux1zv3G2evNNwWc6bSTVvmUDntbJF"
+				"bzz-raw://ee7879b3f62867ef873098b6ffb15672a7440b8b08a3d23096866e487ceb3abe",
+				"dweb:/ipfs/QmYetUXMwesipGGGnbG2RgL2TS6EMfDcwLMEM8Zo7CMGbF"
 			]
 		}
 	},

@@ -28,6 +28,7 @@ contract Tokens{
        createToken[_tokenSymbol].tokenid = _tokenid;
        createToken[_tokenSymbol].tokenStatus = true;
    }
+
     event Transfer(address _to,uint numberofTokens);
    function transfer(uint tokenId,uint nowdate,uint expirytime,string memory _tokenSymbol,address _from,address _to,uint numberofTokens) public{
      require(_from !=address(0),"Invalid address");
@@ -47,6 +48,7 @@ contract Tokens{
       emit Transfer(_to,numberofTokens);
    }
    event Receive(address to,uint tokens);
+   
    function Recieve(uint expirytime,uint nowdate,uint tokenId,string memory _tokenSymbol,address _to,uint totalTokens) public {
       require(_to !=address(0),"Invalid address");
       require(createToken[_tokenSymbol].tokenStatus == true,"Token has not created");

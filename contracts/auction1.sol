@@ -25,11 +25,15 @@ contract Bidding{
       if(highestamount < _amount){
           highestamount = _amount;
           highestbidder = bidder;
+         bid[highestbidder] += _amount;
       }
-      bid[highestbidder] += _amount;
+     
       highestbidder = bidder;
        auctionEnded = true;
        emit bidcompleted(highestbidder,highestamount);
+    }
+    function getHighestBidder() public view returns(address){
+        return highestbidder;
     }
 
 }

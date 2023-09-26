@@ -6,38 +6,33 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "biddingTime",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "AuctionHasEnded",
-				"type": "error"
 			},
 			{
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
+						"indexed": true,
 						"internalType": "address",
-						"name": "winner",
+						"name": "recipient",
 						"type": "address"
 					},
 					{
 						"indexed": false,
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
 					}
 				],
-				"name": "bidcompleted",
+				"name": "CertificationIssued",
 				"type": "event"
 			},
 			{
@@ -48,12 +43,12 @@
 						"type": "address"
 					}
 				],
-				"name": "bid",
+				"name": "certifications",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -62,24 +57,48 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "highestamount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
-				"name": "bidding",
+				"name": "isCertified",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					}
+				],
+				"name": "issueCertification",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getHighestBidder",
+				"name": "owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -91,13 +110,19 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "highestbidder",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "address",
-						"name": "",
+						"name": "recipient",
 						"type": "address"
+					}
+				],
+				"name": "verifyCertification",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -117,7 +142,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/auction1.sol": "Bidding"
+			"contracts/cert.sol": "CertificationVerification"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -131,12 +156,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/auction1.sol": {
-			"keccak256": "0xd15dce1d760e2caa46dcd600b161f55b72c84f11933e88b0b592e774ac59384b",
+		"contracts/cert.sol": {
+			"keccak256": "0x2667ec83b4b7bf28085837456ab5556440818780eaf8a19089f3bb40526b4856",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f30b400c5939abad85f3dd7049b5ca23c79b16efd3fb22919ecb9a0be8d49535",
-				"dweb:/ipfs/QmPNH1Kxf8jcXRw5JnT2JemsBFaAPSU1SMGa9hfdNbqBgM"
+				"bzz-raw://45ec835e8ea1d2a4aba14b87f4dd792ad0df5f78f72ac6dfb83152927e0a2d5b",
+				"dweb:/ipfs/QmWmb2ofqcfAjVypWgZ6HdQHGevtm1VYMTGSo59qeEwk2h"
 			]
 		}
 	},

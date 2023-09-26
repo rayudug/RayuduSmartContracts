@@ -23,6 +23,7 @@ contract School{
             studentData[_add].dateofbirth = _dateofbirth;
             studentData[_add].class = _class;
             studentData[_add].status = true;
+            
     }
     function editData(address _add,uint _regno,string memory _newName,uint _newBirth,uint _newClass) public onlyOwner(){
          studentData[_add].name = _newName;
