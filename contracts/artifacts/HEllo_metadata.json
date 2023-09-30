@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "hget",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/hello1.sol": "HEllo"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/hello1.sol": {
+			"keccak256": "0x50019fd2fe3cf112c1f524d38f5671d81e7ad4cb4f669cc8f2e8ef0f228ea399",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8deef5dd548fb2a888a097b97227b1775e639518280d523dc8a55f146a8e92c0",
+				"dweb:/ipfs/QmcAQB8wTVXWZsHCJWjcxypE4YxD7vCw5YYo2KXudkdE3K"
+			]
+		}
+	},
+	"version": 1
+}

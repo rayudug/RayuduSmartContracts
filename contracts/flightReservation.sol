@@ -52,15 +52,15 @@ contract FlightBooking{
         return balances[msg.sender];
     }
 
-    function addFlight(uint flightNumber,uint _ticketPrice,uint _availableTickets) public onlyOwner(){
+    function addFlight(uint flightNumber,uint _ticketPrice,uint _availableTickets) public {
         require(authorizedStaff[msg.sender] == true,"Not the Authorized Staff");
         booking[flightNumber].flightStatus = 0;  //available
         booking[flightNumber].availableTickets = _availableTickets;
         booking[flightNumber].ticketPrice = _ticketPrice;
     }
     
-    function requestBooking(uint flightNumber,uint seatNumber) public {
-     booking[flightNumber].owner = msg.sender;
+    function requestBooking(uint flightNumber,uint seatNumber) public view {
+     //booking[flightNumber].owner = msg.sender;
      require(booking[flightNumber].flightStatus == 0,"Flight is not Available");  // 0 available
      //status = seatStatus.Available;
       require(seatAvailability[flightNumber][seatNumber] == false,"Seat already Booked");  // available
@@ -95,7 +95,7 @@ contract FlightBooking{
         booking[flightNumber].isConfirmed = true;
     }
 
-    function cancelTicket(address add,uint flightNumber,uint seatNumber,uint numberOfTickets) public {
+    function cancelTicket(address add,uint flightNumber,uint seatNumber,uint numberOfTickets) public onlyOwner() {
        require(seat[flightNumber][seatNumber].pay == true, "Payment not yet done");
        require(seatAvailability[flightNumber][seatNumber] == true,"Seat not Booked");  // true booked
       // require(booking[flightNumber].status == 1,"Seat not Booked");

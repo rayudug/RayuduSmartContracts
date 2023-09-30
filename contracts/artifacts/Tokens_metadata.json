@@ -51,6 +51,26 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "expirytime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "nowdate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_tokenSymbol",
+						"type": "string"
+					},
+					{
 						"internalType": "address",
 						"name": "_to",
 						"type": "address"
@@ -72,19 +92,56 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
-					},
+					}
+				],
+				"name": "balances",
+				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "allowances",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenid",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_tokenSymbol",
+						"type": "string"
+					}
+				],
+				"name": "createNewToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "createToken",
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "tokenid",
 						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "tokenStatus",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -98,26 +155,7 @@
 						"type": "address"
 					}
 				],
-				"name": "balanceof",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "balances",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -168,20 +206,27 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "time",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "tokenId",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+					},
+					{
+						"internalType": "uint256",
+						"name": "nowdate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expirytime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_tokenSymbol",
+						"type": "string"
+					},
 					{
 						"internalType": "address",
 						"name": "_from",
@@ -217,7 +262,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/erctokens.sol": "Tokens"
+			"contracts/errrr.sol": "Tokens"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -231,12 +276,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/erctokens.sol": {
-			"keccak256": "0x3c54293f7a6a05bccbfa581a140c2b996aa66511d244fa09dae6f062df9f3728",
+		"contracts/errrr.sol": {
+			"keccak256": "0x834f7925a0bbf50619b2fc601cd8d4a07b8a3848ae50a7425acaba276167f999",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8af0752d774d66c7756cc77674eb9181f57f5b9d84546206176a2bd401445276",
-				"dweb:/ipfs/QmZm3eQDnAi38y84G2TZNBWBc5su2VBZyTjp6HhLMYUoiz"
+				"bzz-raw://c3e7bd508b58fe410fdc38690bab5e0e1e7400a459fa6990f1dd265760803125",
+				"dweb:/ipfs/QmWNBTpNCisE3VW3GnyxvREj8cQnxCt89kAgf2eYQReKFM"
 			]
 		}
 	},

@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interactInterface.sol": "IInterface"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interactInterface.sol": {
+			"keccak256": "0x96e5170daa1c9d424b50e3cca4b1f5ec914831f736ce880aa6ef438a2dc23ff5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c45f0e6cbf771f13abd2127b9920eff2c5a9270f1a51beb2582be108b190f7ec",
+				"dweb:/ipfs/QmR6TJSWm7XqdHv8MECUtqgS5Na9GpcXUiA8FHxEu6RoMy"
+			]
+		}
+	},
+	"version": 1
+}

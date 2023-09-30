@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.6.12+commit.27d51765"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
@@ -14,26 +14,16 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_bookid",
+						"name": "_id",
 						"type": "uint256"
 					},
 					{
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_author",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
 					}
 				],
-				"name": "addBook",
+				"name": "addbooks",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -57,16 +47,25 @@
 						"internalType": "string",
 						"name": "name",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "author",
-						"type": "string"
-					},
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "value",
+						"name": "_id",
 						"type": "uint256"
+					}
+				],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -74,7 +73,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "libraryowner",
+				"name": "owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -89,29 +88,13 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_bookid",
+						"name": "_id",
 						"type": "uint256"
 					}
 				],
-				"name": "queryBook",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_author",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_value",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "remove",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -128,9 +111,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/library.sol": "Library"
+			"contracts/library2.sol": "Library"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "paris",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -142,12 +125,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/library.sol": {
-			"keccak256": "0x1a28c721e16f5a3bf99a9f642b8ce4bb6c2d7e225f646dc1a736358e97f11e42",
+		"contracts/library2.sol": {
+			"keccak256": "0x422675f0455e9c868ffb71d0e043a683720b07a8dda0d8db4fec71b9536a63d8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b39de42747cf227ee5f9b88e57878818f3e22e0cda3dc16d413ec570a94bb653",
-				"dweb:/ipfs/QmUsxakz5zxVm5hwEHBWnUZv9U4WX1o7Gb2ERf3haJLnKm"
+				"bzz-raw://f8fe465386ce39b4a75ad35e7b58919dbf4792ddcdadcfe727dc2a29149a1307",
+				"dweb:/ipfs/QmdW6rZXtaXVwcDBUsg5UFbRYginxkez4WLq5STJBVbpPk"
 			]
 		}
 	},

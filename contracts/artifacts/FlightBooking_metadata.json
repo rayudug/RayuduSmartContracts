@@ -283,7 +283,7 @@
 				],
 				"name": "requestBooking",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -328,11 +328,11 @@
 	},
 	"sources": {
 		"contracts/flightReservation.sol": {
-			"keccak256": "0x32292b7a202c8e6627e2282e7d42fe81ef8cf2761fb30a32629af9b4ca0c3107",
+			"keccak256": "0x079291e7126a731a9060e2f0c8440c324e57fdf4e62088d73fe6a10f5ee3bf62",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6a32ccf66b4c5723bab295676aae26405f2faca4e95785d4633adb6a3c8c9ca9",
-				"dweb:/ipfs/QmRNSpStxirNBmjXgjgi6T6HwQzcS8Ru2nVw53uan5xP2c"
+				"bzz-raw://ac441579400745267402baf554f1d42fb71f0a9449469b6c4559e7718e252ec7",
+				"dweb:/ipfs/QmcTWtJg3g5mpTuVZwUtXAoHJme6EwjGdFfMce7msFVCgo"
 			]
 		}
 	},
